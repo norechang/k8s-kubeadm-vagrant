@@ -4,7 +4,7 @@ apt-get update
 apt-get install ansible -y
 
 # install cluster
-ansible-playbook -i hosts ~/kube-cluster/initial.yml
-ansible-playbook -i hosts ~/kube-cluster/kube-dependencies.yml
-ansible-playbook -i hosts ~/kube-cluster/master.yml
-ansible-playbook -i hosts ~/kube-cluster/workers.yml
+ansible-playbook -i hosts ~/k8s-kubeadm-vagrant/initial.yml
+ansible-playbook -i hosts ~/k8s-kubeadm-vagrant/kube-dependencies.yml
+ansible-playbook -i hosts ~/k8s-kubeadm-vagrant/master.yml
+ansible-playbook -i hosts ~/k8s-kubeadm-vagrant/workers.yml
